@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+}
+
+h1{
+	font-family: Helvetica;
+}
+
+#header{
+	width: 100%;
+	background-color: #2E9AFE;
+	height: 50px;
+	padding: 10px 0 2px 0; 
+}
+
+#header h1{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Helvetica;
+	margin: 0;
+}
+
+#body{
+	padding: 4%;
+}
+
+.issue{
+	padding: 15px 0;
+}
+
+.instructions{
+	font-family: Arial;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.answers{
+	font-family: Helvetica;
+	font-size: 1.0em;
+}
+
+.answers-i{
+	font-family: Helvetica;
+	font-size: 1.0em;
+	font-style: italic;
+}

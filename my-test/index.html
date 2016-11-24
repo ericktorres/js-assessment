@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My Answers with AngularJS</title>
+		<link rel="stylesheet" type="text/css" href="app/app.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.1/angular.min.js"></script>
+		<script src="app/app.js"></script>
+	</head>
+	<body ng-app="my-test">
+		<div id="header">
+			<h1>AngularJS</h1>
+		</div>
+		<div id="body">
+			<div id="arrays" ng-controller="arraysController as arrays">
+				<h1>Arrays</h1>
+				<div class="issue">
+					<div class="instructions">You should be able to determine the location of an item in an array</div>
+					<div class="answers">If you change the first parameter in the function call findPosition that is in this file you should be able to see the results in the next line.</div>
+					<div class="answers-i">El elemento está en la posición {{arrays.findPosition(1, [2, 3, 4, 1])}} del arreglo.</div>
+				</div>
+				<div class="issue">
+					<div class="instructions">You should be able to sum the items of an array</div>
+					<div class="answers">If you change the values of the array in the call of the function sumItems you can see the result in the next line.</div>
+					<div class="answers-i">La suma de los elementos del arreglo es igual a {{arrays.sumItems([2, 3, 4, 1])}}</div>
+				</div>
+				<div class="issue">
+					<div class="instructions">You should be able to add an item to the end of an array </div>
+					<div class="answers">In this case we have an array that includes computer brands, so, you can change the brand that is in tghe call of the function addItem and see what happend.</div>
+					<div class="answers-i">{{arrays.addItem('Apple', ['Dell', 'HP', 'Toshiba', 'Acer'])}}</div>
+				</div>
+			</div>
+			<div id="async_behavior" ng-controller="asyncController">
+				<h1>Async Behavior</h1>
+				<div class="issue">
+					<div class="instructions">You should be able to retrieve data from the server and return a sorted array of names</div>
+					<div class="answers">In this exercise we are calling a webservice REST and receiving just the field name. To run this exercise is better in a web server. You can see the logic in the function getData of the asyncController.</div>
+					<div class="answers-i">
+						<ul>
+							<li ng-repeat="arrData in data">{{data.name}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="functions" ng-controller="functionsController as functions">
+				<h1>Functions</h1>
+				<div class="issue">
+					<div class="instructions">You should be able to use an array as arguments when calling a function</div>
+					<div class="answers">The argument passed is an array.</div>
+					<div class="answers-i">{{functions.getArray(['Real Madrid', 'Barcelona', 'Arsenal', 'PSG'])}}</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
